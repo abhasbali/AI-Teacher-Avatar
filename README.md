@@ -1,69 +1,133 @@
-# Welcome to your Lovable project
+# 🌟 AI-Powered Virtual Teaching Assistant SaaS
 
-## Project info
+![SaaS](https://img.shields.io/badge/SaaS-Teaching-blueviolet?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Neon](https://img.shields.io/badge/Neon_DB-0093FF?style=for-the-badge&logo=postgresql&logoColor=white)
 
-**URL**: https://lovable.dev/projects/a18ee1aa-3ea3-4807-b4c0-cd5f1d019cb4
+## 🚀 Overview
 
-## How can I edit this code?
+🎓 **Empowering Educators, Enhancing Learning!**
 
-There are several ways of editing your application.
+The **AI-Powered Virtual Teaching Assistant SaaS** is a revolutionary AI-driven platform that redefines how educators interact with technology. By leveraging advanced AI, our solution seamlessly automates content generation, grading, and student progress tracking—allowing teachers to focus on what truly matters: *teaching*. 
 
-**Use Lovable**
+Built for scalability, security, and efficiency, our SaaS solution bridges the gap between education and artificial intelligence, transforming traditional learning environments into intelligent digital ecosystems.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a18ee1aa-3ea3-4807-b4c0-cd5f1d019cb4) and start prompting.
+## 🎯 Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- 🔥 **AI-Generated Content** – Create lesson plans, quizzes & assignments instantly
+- 📊 **Automated Grading** – Let AI evaluate assignments with pinpoint accuracy
+- 📈 **Performance Analytics** – AI-driven insights to track student growth
+- 🔐 **Seamless Authentication** – Secure access powered by Clerk
+- 🛠 **Scalable Modular Architecture** – Built for performance & flexibility
 
-**Use your preferred IDE**
+## 🛠 Tech Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 🎨 Frontend
+- ⚛ React.js
+- 🎨 Tailwind CSS
+- ⚡ Next.js
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 🏢 Backend
+- 🟢 Node.js
+- 🚀 Express.js
+- 🛢 Neon Database (PostgreSQL)
+- 🔗 Prisma ORM
 
-Follow these steps:
+### 🤖 AI Integration
+- 🔥 Google Gemini API
+- 🧠 OpenAI API
 
+### 🔑 Authentication
+- 🔐 Clerk API
+
+### ☁ Cloud Services
+- 📦 AWS / Firebase (Storage & Hosting)
+- ⚡ Vercel (Deployment)
+
+## 📂 Project Setup
+
+### 1️⃣ Clone the Repository
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone https://github.com/Mrktheone/AI-powered-Virtual-Teaching-Assistant-SaaS.git
+cd ai-saas
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 2️⃣ Install Dependencies
+```sh
+npm install
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### 3️⃣ Start the Development Server
+```sh
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 🏫 Student SaaS Setup
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. Open a new terminal and navigate to the project folder:
+```sh
+cd student-saas
+```
 
-**Use GitHub Codespaces**
+2. Create a `.env` file and add your API keys:
+```
+GEMINI_API_KEY=your-gemini-api-key
+CLERK_API_KEY=your-clerk-api-key
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+3. Install dependencies:
+```sh
+npm install
+```
 
-## What technologies are used for this project?
+4. Start the server:
+```sh
+npm run dev
+```
 
-This project is built with .
+## 🎓 Teaching SaaS Setup
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. Open a new terminal and navigate to the project folder:
+```sh
+cd teaching-saas
+```
 
-## How can I deploy this project?
+2. Create a `.env` file and add your API keys:
+```
+OPENAI_API_KEY=your-openai-api-key
+CLERK_API_KEY=your-clerk-api-key
+```
 
-Simply open [Lovable](https://lovable.dev/projects/a18ee1aa-3ea3-4807-b4c0-cd5f1d019cb4) and click on Share -> Publish.
+3. Install dependencies:
+```sh
+npm install
+```
 
-## I want to use a custom domain - is that possible?
+4. Start the server:
+```sh
+npm run dev
+```
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## 🚀 Deployment
+
+Deploy your SaaS effortlessly using Vercel, AWS, or Firebase. Ensure all necessary `.env` variables are configured before deployment.
+
+- 🔹 **Production-Ready**: Optimized for speed, security, and scalability
+- 🔹 **Zero Downtime Deployment**: Continuous integration & updates
+- 🔹 **Global Reach**: Host anywhere, access from anywhere
+
+## 🎖 Why Choose Our SaaS?
+
+- ✅ **AI-Driven Automation** – Saves time, enhances efficiency
+- ✅ **Scalable & Modular** – Adaptable to evolving educational needs
+- ✅ **Data-Driven Insights** – Understand student progress like never before
+- ✅ **Seamless User Experience** – Built for both teachers & students
+
+## 🏆 Made with ❤ by Team RECURSIVE MINDS
+
+💡 **Transforming Education, One AI at a Time!**
