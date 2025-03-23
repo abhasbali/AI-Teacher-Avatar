@@ -49,12 +49,54 @@ Built for scalability, security, and efficiency, our SaaS solution bridges the g
 - 📦 AWS / Firebase (Storage & Hosting)
 - ⚡ Vercel (Deployment)
 
+## 📂 Connected Repositories
+
+This repository is connected to two additional repositories:
+
+- 🧑‍🏫 [AI-Teacher-Avatar](https://github.com/abhasbali/AI-Teacher-Avatar) - Creates avatar for your teacher
+- 👨‍🎓 [SaaS-student](https://github.com/abhasbali/SaaS-student) - For student testing and evaluation
+
+## ⚙️ Technical Challenges & Solutions
+
+### 1. Challenge: Content Generation Quality and Relevance
+
+**Problem:** When integrating **OpenAI API** for content generation (e.g., quiz creation, lecture summaries), the outputs were often **too generic** or **not tailored** to specific subjects and student grade levels.
+
+**Solution:**
+* **Prompt Engineering**: We iteratively refined prompts to include **specific instructions**, such as:
+   * Defining the **grade level** (e.g., "Generate quiz questions for Grade 8 Science").
+   * Setting **difficulty levels**.
+   * Providing **contextual examples** in the prompts.
+* **Fine-tuning Models (Optional)**: For higher accuracy, we considered **fine-tuning GPT-3 models** using **domain-specific datasets** via **OpenAI's fine-tune API**.
+* **Backend Implementation**:
+
+```javascript
+const response = await openai.createCompletion({
+  model: "text-davinci-003",
+  prompt: "Generate 5 multiple-choice questions on Newton's Laws for 8th-grade students.",
+  temperature: 0.7,
+  max_tokens: 300
+});
+```
+
+### 2. Challenge: Real-Time Student Performance Tracking
+
+**Problem:** Handling **large volumes of student performance data** and calculating **real-time analytics** (grades, progress charts) caused **latency** in the dashboard.
+
+**Solution:**
+* **Efficient Database Queries**:
+   * Optimized **PostgreSQL** queries with **indexes** on student IDs and timestamps.
+   * Used **materialized views** for pre-calculated results, improving query speed.
+* **Real-Time Updates**:
+   * Integrated **WebSockets** for pushing real-time analytics updates.
+   * Backend architecture optimized for performance.
+
 ## 📂 Project Setup
 
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/Mrktheone/AI-powered-Virtual-Teaching-Assistant-SaaS.git
-cd ai-saas
+git clone https://github.com/abhasbali/AI-Teacher.git
+cd AI-Teacher
 ```
 
 ### 2️⃣ Install Dependencies
@@ -71,7 +113,8 @@ npm run dev
 
 1. Open a new terminal and navigate to the project folder:
 ```sh
-cd student-saas
+git clone https://github.com/abhasbali/SaaS-student.git
+cd SaaS-student
 ```
 
 2. Create a `.env` file and add your API keys:
@@ -94,7 +137,8 @@ npm run dev
 
 1. Open a new terminal and navigate to the project folder:
 ```sh
-cd teaching-saas
+git clone https://github.com/abhasbali/AI-Teacher-Avatar.git
+cd AI-Teacher-Avatar
 ```
 
 2. Create a `.env` file and add your API keys:
